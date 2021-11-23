@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "get_next_line.h"
+#include "libft.h"
 
 static char	*ft_read_fd(int fd, char *stack_backup, char *heap_buffer);
 static char	*ft_format_line(char *line);
