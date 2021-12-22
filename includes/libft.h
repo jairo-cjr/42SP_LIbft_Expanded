@@ -6,7 +6,7 @@
 /*   By: jcaetano <jcaetano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/26 11:16:46 by jcaetano          #+#    #+#             */
-/*   Updated: 2021/12/22 19:06:55 by jcaetano         ###   ########.fr       */
+/*   Updated: 2021/12/22 19:13:48 by jcaetano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -446,4 +446,15 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
  * @return The new string.
  */
 char	*ft_strlower(char *str);
+
+/**
+ * @brief Compares the two strings s1 and s2
+ *
+ * @param s1 Pointer to the area of memory of the first string
+ * @param s2 Pointer to the area of memory of the second string
+ * @return int 0, if the s1 and s2 are equal;
+ * A negative value if s1 < s2; A positive value if s1 > s2
+ */
+int		ft_strcmp(const char *s1, const char *s2);
+
 #endif

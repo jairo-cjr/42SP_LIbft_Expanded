@@ -65,6 +65,7 @@ S_LIST = \
     ft_toupper.c \
     get_next_line.c \
     ft_strlower.c \
+    ft_strcmp.c \
 
 SOURCES = $(addprefix $(S_DIR), $(S_LIST))
 
