@@ -6,7 +6,7 @@
 /*   By: jcaetano <jcaetano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/26 11:16:46 by jcaetano          #+#    #+#             */
-/*   Updated: 2021/09/21 20:29:58 by jcaetano         ###   ########.fr       */
+/*   Updated: 2021/12/22 19:06:55 by jcaetano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -439,4 +439,11 @@ void	ft_lstiter(t_list *lst, void (*f)(void *));
  */
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
+/**
+ * @brief Convert string to lowercase.
+ *
+ * @param str String to be converted.
+ * @return The new string.
+ */
+char	*ft_strlower(char *str);
 #endif
