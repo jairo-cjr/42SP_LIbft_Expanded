@@ -6,7 +6,7 @@
 /*   By: jcaetano <jcaetano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/26 11:16:46 by jcaetano          #+#    #+#             */
-/*   Updated: 2021/12/22 19:13:48 by jcaetano         ###   ########.fr       */
+/*   Updated: 2021/12/27 11:00:27 by jcaetano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -456,5 +456,31 @@ char	*ft_strlower(char *str);
  * A negative value if s1 < s2; A positive value if s1 > s2
  */
 int		ft_strcmp(const char *s1, const char *s2);
+
+/**
+ * @brief Compares two numbers and returns the highest one.
+ *
+ * @param a Number to be compare.
+ * @param b Number to be compare.
+ * @return The highest number.
+ */
+int		ft_max(int a, int b);
+
+/**
+ * @brief Compares two numbers and returns the lowest one.
+ *
+ * @param a Number to be compare.
+ * @param b Number to be compare.
+ * @return The lowest number.
+ */
+int		ft_min(int a, int b);
+
+/**
+ * @brief Converts the number for its absolute value.
+ *
+ * @param num Number to be converted.
+ * @return The absolute value of num.
+ */
+int		ft_absolute(int num);
 
 #endif
