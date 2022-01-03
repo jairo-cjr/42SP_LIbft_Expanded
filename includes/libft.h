@@ -6,7 +6,7 @@
 /*   By: jcaetano <jcaetano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/26 11:16:46 by jcaetano          #+#    #+#             */
-/*   Updated: 2022/01/03 08:49:41 by jcaetano         ###   ########.fr       */
+/*   Updated: 2022/01/03 09:41:53 by jcaetano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,16 @@ typedef struct s_list
 
 # define INT_MAX 2147483647
 # define INT_MIN -2147483648
+
+/**
+ * @brief Read the text available on the file descriptor one line at a time
+ * until the end of it.
+ *
+ * @param fd File descriptor to read from.
+ * @return char* A line read from a file descriptor. NULL if error or not else
+ * to read.
+ */
+char	*get_next_line(int fd);
 
 /**
  * @brief Checks if c is alphabetic
