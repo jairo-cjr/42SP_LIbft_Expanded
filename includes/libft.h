@@ -6,7 +6,7 @@
 /*   By: jcaetano <jcaetano@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/26 11:16:46 by jcaetano          #+#    #+#             */
-/*   Updated: 2021/12/27 11:00:27 by jcaetano         ###   ########.fr       */
+/*   Updated: 2022/01/03 08:49:41 by jcaetano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include <math.h>
 
 typedef struct s_list
 {
@@ -219,12 +220,12 @@ char	*ft_strnstr(const char *big, const char *little, size_t n);
 
 /**
  * @brief Converts the initial portion of the string pointed
- * by nptr to int
+ * by str to int
  *
- * @param nptr Pointer to the string to be converted
+ * @param str Pointer to the string to be converted
  * @return int The converted value or 0 on error
  */
-int		ft_atoi(const char *nptr);
+int		ft_atoi(const char *str);
 
 /**
  * @brief Allocates memory for an array
@@ -482,5 +483,22 @@ int		ft_min(int a, int b);
  * @return The absolute value of num.
  */
 int		ft_absolute(int num);
+
+/**
+ * @brief Verify if the value is a white-space
+ *
+ * @param num char to be verified..
+ * @return 1 if true, 0 if false.
+ */
+int		ft_isspace(char c);
+
+/**
+ * @brief Converts the initial portion of the string pointed
+ * by str to double
+ *
+ * @param str Pointer to the string to be converted
+ * @return double The converted value or 0 on error
+ */
+double	ft_atof(const char *str);
 
 #endif
